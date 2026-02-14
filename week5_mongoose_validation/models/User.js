@@ -1,0 +1,61 @@
+const mongoose = require("mongoose");
+
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const CITY_REGEX = /^[A-Za-zÇĞİÖŞÜçğıöşü\s]+$/;
+const URL_REGEX = /^https?:\/\/.+/i;
+const ZIP_REGEX = /^\d{5}-\d{4}$/;
+const PHONE_REGEX = /^\d-\d{3}-\d{3}-\d{4}$/;
+
+const userSchema = new mongoose.Schema(
+  {
+    name: {
+      type: String,
+      required: [true, "name is required"],
+      trim: true,
+    },
+    username: {
+      type: String,
+      required: [true, "username is required"],
+      minlength: [4, "username must be at least 4 characters"],
+      maxlength: [100, "username must be at most 100 characters"],
+      trim: true,
+    },
+    email: {
+      type: String,
+      required: [true, "email is required"],
+      unique: true,
+      lowercase: true,
+      trim: true,
+      match: [EMAIL_REGEX, "email must be a valid email address"],
+    },
+    address: {
+      city: {
+        type: String,
+        required: [true, "address.city is required"],
+        trim: true,
+        match: [CITY_REGEX, "city must contain only letters and spaces"],
+      },
+      zipcode: {
+        type: String,
+        required: [true, "address.zipcode is required"],
+        match: [ZIP_REGEX, "zipcode must match 12345-1234 format"],
+      },
+    },
+    website: {
+      type: String,
+      required: [true, "website is required"],
+      trim: true,
+      match: [URL_REGEX, "website must be a valid URL starting with http or https"],
+    },
+    phone: {
+      type: String,
+      required: [true, "phone is required"],
+      match: [PHONE_REGEX, "phone must match 1-123-123-1234 format"],
+    },
+  },
+  { timestamps: true }
+);
+
+userSchema.index({ email: 1 }, { unique: true });
+
+module.exports = mongoose.model("User", userSchema);
