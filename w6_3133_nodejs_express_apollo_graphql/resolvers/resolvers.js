@@ -19,12 +19,24 @@ const movieResolvers = {
             } catch (error) {
                 throw new Error('Movie not found');
             }
+        },
+
+        // Fetch movies by director name (uses mongoose static method)
+        moviesByDirector: async (_, { director_name }) => {
+            try {
+                return await MovieModel.findByDirectorName(director_name);
+            } catch (error) {
+                throw new Error('Failed to fetch movies by director');
+            }
         }
     },
 
     Mutation: {
         // Create a new movie
-        addMovie: async (_, { name, director_name, production_house, release_date, rating }) => {
+        addMovie: async (
+            _,
+            { name, director_name, production_house, release_date, rating }
+        ) => {
             try {
                 const newMovie = new MovieModel({
                     name,
@@ -38,9 +50,20 @@ const movieResolvers = {
                 throw new Error('Failed to add movie');
             }
         },
+        //ADD
+        addMovies: async (_, { movies }) => {
+            try {
+                return await MovieModel.insertMany(movies);
+            } catch (error) {
+                throw new Error('Failed to add movies');
+            }
+        },
 
         // Update an existing movie
-        updateMovie: async (_, { id, name, director_name, production_house, release_date, rating }) => {
+        updateMovie: async (
+            _,
+            { id, name, director_name, production_house, release_date, rating }
+        ) => {
             try {
                 return await MovieModel.findByIdAndUpdate(
                     id,

@@ -18,7 +18,7 @@ const movieSchema = new mongoose.Schema({
     type: String,
     required: [true, "Release date is required"],
     validate: {
-      validator: function(v) {
+      validator: function (v) {
         // Ensure date format is YYYY-MM-DD
         return /^\d{4}-\d{2}-\d{2}$/.test(v);
       },
@@ -30,18 +30,18 @@ const movieSchema = new mongoose.Schema({
     min: [0.0, "Rating must be at least 0.0"],
     max: [10.0, "Rating must be at most 10.0"],
     required: [true, "Rating is required"]
-  },
+  }
 });
 
 // Virtual property to calculate movie age dynamically
-movieSchema.virtual('movie_age').get(function() {
+movieSchema.virtual('movie_age').get(function () {
   const releaseYear = parseInt(this.release_date.split('-')[0]);
   const currentYear = new Date().getFullYear();
   return currentYear - releaseYear;
 });
 
 // Instance method to return a formatted movie summary
-movieSchema.methods.getMovieSummary = function() {
+movieSchema.methods.getMovieSummary = function () {
   return `${this.name} directed by ${this.director_name} was released in ${this.release_date} and has a rating of ${this.rating}.`;
 };
 
@@ -53,7 +53,7 @@ movieSchema.statics.findByDirectorName = function (directorName) {
 };
 
 // Pre-save hook to log when a movie document is saved
-movieSchema.pre('save', function() {
+movieSchema.pre('save', function () {
   console.log(`Saving movie: ${this.name}`);
 });
 
