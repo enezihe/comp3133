@@ -1,0 +1,163 @@
+# COMP3133 – Full Stack Development II  
+George Brown College  
+
+---
+
+## 🔎 Table of Contents
+
+- [Course Description](#-course-description)
+- [Course Learning Outcomes](#-course-learning-outcomes)
+- [Weekly Topical Outline](#-weekly-topical-outline)
+  - [Week 1](#week-1)
+  - [Week 2](#week-2)
+  - [Week 3](#week-3)
+  - [Week 4](#week-4)
+  - [Week 5](#week-5)
+  - [Week 6](#week-6)
+  - [Week 7](#week-7)
+  - [Week 8](#week-8)
+  - [Week 9](#week-9)
+  - [Week 10](#week-10)
+  - [Week 11](#week-11)
+  - [Week 12](#week-12)
+  - [Week 13](#week-13)
+  - [Week 14](#week-14)
+
+---
+
+## 📌 Course Description
+
+This course builds on the fundamental knowledge and skills required for full stack development using the **MEAN stack**. 
+
+Core technologies covered:
+
+- Node.js environment  
+- Express framework  
+- MongoDB (NoSQL database)  
+- Mongoose ODM  
+- Angular front-end framework  
+
+Students are expected to have prior working knowledge of:
+
+- HTML & CSS  
+- JavaScript (ES6)  
+- Node.js & Express (COMP3123)  
+
+---
+
+## 🎯 Course Learning Outcomes
+
+By the end of this course, students will be able to:
+
+1. Design and implement a simple front-end solution using Angular.
+2. Utilize native features of Node.js using built-in modules.
+3. Implement a data storage solution using MongoDB.
+4. Store and retrieve data using MongoDB and Mongoose ODM.
+5. Implement and consume REST APIs using Node.js and Express.
+
+---
+
+# 📅 Weekly Topical Outline
+
+---
+
+## Week 1
+- Administrative overview  
+- Introduction to MEAN Stack  
+- ES6 Review  
+- Node.js Core Concepts  
+
+---
+
+## Week 2
+- Node.js File System  
+- CRUD operations on files  
+- Streams (Readable/Writable)  
+- Buffer Object  
+
+---
+
+## Week 3
+- Socket.IO  
+- Working with Multiple Sockets  
+- Introduction to Testing  
+- Mocha Framework  
+
+---
+
+## Week 4
+- MongoDB Introduction  
+- Mongoose Schema & Models  
+- Queries & Sorting  
+- Middleware  
+
+---
+
+## Week 5
+- Mongoose Validation  
+  - Built-in validators  
+  - Custom validators  
+  - Handling validation errors  
+
+---
+
+## Week 6
+- Introduction to GraphQL  
+- REST vs GraphQL  
+- Schemas, Types, Queries  
+- Express integration  
+
+---
+
+## Week 7
+**Midterm Exam**
+
+---
+
+## Week 8
+Intersession Week  
+
+---
+
+## Week 9
+- NPM  
+- Getting Started with Angular  
+- Introduction to TypeScript  
+
+---
+
+## Week 10
+- Angular Architecture  
+- Angular CLI  
+- Components  
+
+---
+
+## Week 11
+- Data Binding  
+- Event Binding  
+- Directives  
+
+---
+
+## Week 12
+- Building Reusable Components  
+- Routing & Navigation  
+- View Encapsulation / Shadow DOM  
+
+---
+
+## Week 13
+- Consuming HTTP Services  
+- Observables & RxJS  
+- Template Driven Forms  
+- Angular Material  
+
+---
+
+## Week 14
+- Authentication  
+- Authorization  
+
+---
+
