@@ -1,6 +1,4 @@
 # COMP3133 – Full Stack Development II  
-George Brown College  
-
 ---
 
 ## 🔎 Table of Contents
