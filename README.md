@@ -120,9 +120,65 @@ Intersession Week
 ---
 
 ## Week 9
-- NPM  
-- Getting Started with Angular  
-- Introduction to TypeScript  
+
+This week focuses on **TypeScript fundamentals and the preparation required for Angular development**.
+
+TypeScript extends JavaScript by introducing **static typing, modern ES6 syntax, and a modular architecture**, helping improve code reliability and maintainability in large applications.
+
+### Topics Covered
+
+- Introduction to TypeScript
+- Installing and using the TypeScript compiler (`tsc`)
+- TypeScript vs JavaScript
+- ES6 features in TypeScript
+  - `let` and `const`
+  - Arrow functions
+  - Template literals
+- TypeScript Classes
+  - Properties
+  - Methods
+  - Object instantiation
+- Access Modifiers
+  - `public`
+  - `private`
+- Constructors and Encapsulation
+- TypeScript Modules
+  - `export`
+  - `import`
+  - Module-based project structure
+- Environment setup for Angular development
+
+### Lab 06 – TypeScript Fundamentals
+
+Hands-on exercises demonstrating core TypeScript concepts.
+
+#### Exercise 1 – TypeScript First Start
+- Installation of the TypeScript compiler using NPM
+- Compilation of `.ts` files into JavaScript using `tsc`
+- Implementation of ES6 syntax:
+  - Arrow functions
+  - Template literals
+  - `let` variables
+
+#### Exercise 2 – Types, Classes and Objects
+- Creation of a `Customer` class
+- Definition of class properties and methods
+- Object instantiation and execution using Node.js
+
+#### Exercise 3 – Access Modifiers and Constructors
+- Use of the `private` access modifier
+- Implementation of constructors
+- Application of encapsulation in TypeScript classes
+
+#### Exercise 4 – Modules
+- Implementation of the TypeScript module system
+- Exporting the `Customer` class
+- Importing modules into `main.ts`
+- Execution of a modular TypeScript application
+
+### Key Outcome
+
+Understanding how **TypeScript enhances JavaScript by introducing static typing, modular design, and improved maintainability**, forming the foundation for Angular development.
 
 ---
 
