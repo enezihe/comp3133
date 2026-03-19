@@ -185,6 +185,38 @@ Understanding how **TypeScript enhances JavaScript by introducing static typing,
 - Angular CLI  
 - Components  
 
+### Lab 07 – Angular & Express Generator
+
+This lab introduces Express Generator for rapid backend scaffolding and the Angular CLI for building the first Angular application.
+
+#### Exercise 1 – Express Generator
+- Installed the Express application generator globally using NPM
+- Generated a new Express application named `myapp` with the Pug view engine
+- Reviewed the generated file structure including routes, views, and public folders
+- Installed application dependencies using `npm install`
+- Reviewed the `package.json` scripts section and the `bin/www` entry point
+- Started the web server on port 3000 using `npm start`
+- Verified the running application at `http://localhost:3000`
+
+#### Exercise 2 – Routes & Body Parser
+- Installed the `body-parser` middleware using NPM
+- Configured `body-parser` with `urlencoded` parser in `routes/users.js`
+- Implemented a GET route returning a resource response
+- Implemented a POST route that reads request body parameters and logs them to the console
+- Tested GET and POST routes using Postman
+- Verified `POST received!` response from the `/users` endpoint
+
+#### Exercise 3 – Angular CLI & First Application
+- Installed Angular CLI globally using NPM
+- Created a new Angular project named `my-app` using `ng new`
+- Launched the Angular development server using `ng serve`
+- Edited `app.component.ts` to update the application title
+- Verified live reload in the browser
+
+### Key Outcome
+
+Understanding how **Express Generator** accelerates backend project setup and how **Angular CLI** provides a structured foundation for building modern single-page applications using TypeScript.
+
 ---
 
 ## Week 11
