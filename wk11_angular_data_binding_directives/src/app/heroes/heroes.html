@@ -16,3 +16,8 @@
     <input id="hero-name" [(ngModel)]="selectedHero.name" placeholder="name">
   </div>
 </div>
+<hr>
+<h3>Input Format Directive</h3>
+<p>Text will be converted to uppercase on blur:</p>
+<input type="text" inputFormat placeholder="Type something...">
+<button (click)="clearInput()">Clear</button>

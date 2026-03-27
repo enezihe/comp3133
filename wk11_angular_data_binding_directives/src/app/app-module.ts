@@ -4,10 +4,11 @@ import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { Heroes } from './heroes/heroes';
 import { RemoveSpacesPipe } from './remove-spaces-pipe';
+import { InputFormat } from './input-format';
 
 @NgModule({
   declarations: [App],
-  imports: [BrowserModule, AppRoutingModule, Heroes, RemoveSpacesPipe],
+  imports: [BrowserModule, AppRoutingModule, Heroes, RemoveSpacesPipe, InputFormat],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
 })
