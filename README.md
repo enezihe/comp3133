@@ -224,6 +224,35 @@ Understanding how **Express Generator** accelerates backend project setup and ho
 - Event Binding  
 - Directives  
 
+### Lab 08 – Angular Data Binding & Directives
+
+#### Exercise 1 – Structural Directives & Data Binding
+- Built Tour of Heroes application using Angular CLI
+- Defined `Hero` interface with `id` and `name` properties
+- Created static mock data array in `mock-heroes.ts`
+- Generated `HeroesComponent` using `ng generate component`
+- Used `*ngFor` to render hero list
+- Used `*ngIf` for conditional rendering of hero detail section
+- Implemented `[(ngModel)]` for two-way data binding on hero name input
+- Used `[class.selected]` and `(click)` for hero selection
+
+#### Exercise 2 – Custom Pipe
+- Generated `RemoveSpacesPipe` using `ng generate pipe remove-spaces`
+- Implemented `PipeTransform` interface
+- Used `String.replace(/-/g, ' ')` to replace all dashes with spaces
+- Applied pipe in template: `{{ hero.name | removeSpaces }}`
+
+#### Exercise 3 – Custom Directive
+- Generated `InputFormat` directive using `ng generate directive input-format`
+- Injected `ElementRef` to access the host DOM element
+- Used `@HostListener('blur')` to listen for the blur event
+- Converted input value to uppercase on blur: `value.toUpperCase()`
+- Applied directive as attribute: `<input type="text" inputFormat />`
+
+### Key Outcome
+
+Understanding how Angular **directives** control DOM rendering and behavior, how **custom pipes** transform template data, and how **custom directives** extend native HTML element functionality.
+
 ---
 
 ## Week 12
@@ -246,4 +275,3 @@ Understanding how **Express Generator** accelerates backend project setup and ho
 - Authorization  
 
 ---
-
